@@ -13,9 +13,9 @@
 </div>
 
 <label class="ancho-input-one"> Restaurante
-[select* your-recipient "Málaga|dioni@conversalia.es"
-                    "Benalmádena|dsanbla@gmail.com"
-                    "Fuengirola|lbatzi_c397r@tahyu.com"] </label>
+[select* your-recipient "Málaga|xxx@dominio.es"
+                    "Benalmádena|yyy@dominio.com"
+                    "Fuengirola|zzzz@dominio.eu"] </label>
 
 
 [group horas_malaga]
