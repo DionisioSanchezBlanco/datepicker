@@ -1,2 +1,7 @@
 # datepicker
-Calendario para fechas en CF7
+Datepicker for WordPress CF7
+
+## Form example
+
+
+## disable_dates.js
