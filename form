@@ -1,0 +1,87 @@
+<label class="ancho-input-one"> Nombre
+    [text* your-name] </label>
+
+<div class="two-columns-row">
+    <div class="two-columns-col">
+    <label> Email
+        [email* your-email] </label>
+    </div>
+    <div class="two-columns-col">
+    <label> Teléfono
+        [tel* telefono] </label>
+    </div>
+</div>
+
+<label class="ancho-input-one"> Restaurante
+[select* your-recipient "Málaga|dioni@conversalia.es"
+                    "Benalmádena|dsanbla@gmail.com"
+                    "Fuengirola|lbatzi_c397r@tahyu.com"] </label>
+
+
+[group horas_malaga]
+<div class="three-columns-row">
+    <div class="three-columns-col">
+        <label class="ancho-input"> Comensales
+            [number* comensales_m min:1 max:10 placeholder "1"] </label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Fecha
+            [text* fecha_m id:fecha placeholder "dd-mm-yyyy"]</label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Hora
+            [select* hora_m "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "16:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00" "23:30"]</label>
+    </div>
+</div>
+[/group]
+
+
+
+[group horas_benalmadena]
+<div class="three-columns-row">
+    <div class="three-columns-col">
+        <label class="ancho-input"> Comensales
+            [number* comensales_b min:1 max:10 placeholder "1"] </label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Fecha
+            [text* fecha_b id:fecha_b placeholder "dd-mm-yyyy"]</label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Hora
+            [select* hora_b "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "16:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00" "23:30"]</label>
+    </div>
+</div>
+[/group]
+
+
+[group horas_fuengirola]
+<div class="three-columns-row">
+    <div class="three-columns-col">
+        <label class="ancho-input"> Comensales
+            [number* comensales min:1 max:10 placeholder "1"] </label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Fecha
+            [text* fecha id:fecha_f placeholder "dd-mm-yyyy"]</label>
+    </div>
+
+    <div class="three-columns-col">
+        <label class="ancho-input"> Hora
+            [select* hora "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "16:30" "19:00" "19:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00" "23:30"]</label>
+    </div>
+</div>
+[/group]
+
+
+<label class="ancho-input-one"> Comentarios (opcional)
+    [textarea your-message] </label>
+
+[acceptance aceptar] He leído y aceptado la <a href="/politica-de-privacidad" target="_blank">política de privacidad</a>
+
+[submit "Enviar"]
