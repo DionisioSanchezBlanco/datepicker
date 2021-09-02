@@ -9,6 +9,7 @@ Script to enable only days from tomorrow and to disable Wednesday for two of the
 
 ## functions.php
 /* Custom script with no dependencies, enqueued in the header */
+
 add_action('wp_enqueue_scripts', 'tutsplus_enqueue_custom_js');
 function tutsplus_enqueue_custom_js() {
     wp_enqueue_script('jquery');
