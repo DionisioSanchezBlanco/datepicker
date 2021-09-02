@@ -6,3 +6,11 @@ Form created with CF7 and CF7 conditional fields. Fields are changed when you se
 
 ## disable_dates.js
 Script to enable only days from tomorrow and to disable Wednesday for two of the restaurants.
+
+## functions.php
+/* Custom script with no dependencies, enqueued in the header */
+add_action('wp_enqueue_scripts', 'tutsplus_enqueue_custom_js');
+function tutsplus_enqueue_custom_js() {
+    wp_enqueue_script('jquery');
+    wp_enqueue_script('disable_dates', get_stylesheet_directory_uri().'/js/disable_dates.js', array('jquery', 'jquery-ui-datepicker'), '1.0', true );
+}
