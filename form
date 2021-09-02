@@ -13,9 +13,9 @@
 </div>
 
 <label class="ancho-input-one"> Restaurante
-[select* your-recipient "Málaga|xxx@dominio.es"
-                    "Benalmádena|yyy@dominio.com"
-                    "Fuengirola|zzzz@dominio.eu"] </label>
+[select* your-recipient "Málaga|xxxx@dominio.com"
+                    "Benalmádena|yyyyy@dominio.com"
+                    "Fuengirola|zzzzz@dominio.com"] </label>
 
 
 [group horas_malaga]
@@ -27,12 +27,12 @@
 
     <div class="three-columns-col">
         <label class="ancho-input"> Fecha
-            [text* fecha_m id:fecha placeholder "dd-mm-yyyy"]</label>
+            [text* fecha_m id:fecha readonly "Elige fecha"]</label>
     </div>
 
     <div class="three-columns-col">
         <label class="ancho-input"> Hora
-            [select* hora_m "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "16:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00" "23:30"]</label>
+            [select* hora_m "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00"]</label>
     </div>
 </div>
 [/group]
@@ -48,12 +48,12 @@
 
     <div class="three-columns-col">
         <label class="ancho-input"> Fecha
-            [text* fecha_b id:fecha_b placeholder "dd-mm-yyyy"]</label>
+            [text* fecha_b id:fecha_b readonly "Elige fecha"]</label>
     </div>
 
     <div class="three-columns-col">
         <label class="ancho-input"> Hora
-            [select* hora_b "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "16:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00" "23:30"]</label>
+            [select* hora_b "13:00" "13:30" "14:00" "14:30" "15:00" "15:30" "16:00" "19:00" "19:30" "20:00" "20:30" "21:00" "21:30" "22:00" "22:30" "23:00"]</label>
     </div>
 </div>
 [/group]
@@ -68,7 +68,7 @@
 
     <div class="three-columns-col">
         <label class="ancho-input"> Fecha
-            [text* fecha id:fecha_f placeholder "dd-mm-yyyy"]</label>
+            [text* fecha id:fecha_f readonly "Elige fecha"]</label>
     </div>
 
     <div class="three-columns-col">
