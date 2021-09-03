@@ -7,6 +7,11 @@ Form created with CF7 and CF7 conditional fields. Fields are changed when you se
 ## disable_dates.js
 Script to enable only days from tomorrow and to disable Wednesday for two of the restaurants.
 
+## checkin_checkout.js
+Script to manage two datepickers:
+- checkin: The starting date is tomorrow to avoid booking in the current day (today).
+- checkout: The starting date is one day after checkin date selected.
+
 ## functions.php
 /* Custom script with no dependencies, enqueued in the header */
 
